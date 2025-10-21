@@ -1,5 +1,5 @@
 name: 'NuGet Pack'
-description: 'Packs BitMono NuGet packages'
+description: 'Packs ObscuraX NuGet packages'
 inputs:
   nuspec_path:
     description: 'Path to .nuspec'

@@ -7,7 +7,7 @@ Do Not Resolve Members
     Be careful, because ``Context.Module`` (ModuleDefinition) doesn't affected by ``DoNotResolveAttribute``.
 
 
-For comfort BitMono provides an API which able to do not pass specfic members inside of the protection for easier understanding and abstraction let's call ``members`` as - types/methods/fields/properties, etc.
+For comfort ObscuraX provides an API which able to do not pass specfic members inside of the protection for easier understanding and abstraction let's call ``members`` as - types/methods/fields/properties, etc.
 
 
 .. code-block:: csharp
@@ -18,7 +18,7 @@ For comfort BitMono provides an API which able to do not pass specfic members in
     }
 
 
-Everything which is passed inside of the ``Context.Parameters.Members`` is all members which were found inside of the module and sorted by BitMono (skipped members with [ObfuscationAttribute] and [DoNotResolveAttribute], etc), and passed using ``IMetadataMember`` AsmResolver's APIs.
+Everything which is passed inside of the ``Context.Parameters.Members`` is all members which were found inside of the module and sorted by ObscuraX (skipped members with [ObfuscationAttribute] and [DoNotResolveAttribute], etc), and passed using ``IMetadataMember`` AsmResolver's APIs.
 
 
 .. code-block:: csharp

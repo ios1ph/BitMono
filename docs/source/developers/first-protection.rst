@@ -3,13 +3,13 @@ Creating your first Protection
 
 .. warning::
 
-    BitMono provides a lot of examples in source code with existing protection and maximum functional usage, you can find them in BitMono.Protections project.
+    ObscuraX provides a lot of examples in source code with existing protection and maximum functional usage, you can find them in ObscuraX.Protections project.
 
 
-Create your protection in the ``BitMono.Protections`` namespace.
+Create your protection in the ``ObscuraX.Protections`` namespace.
 
 - The Dependency Injection (DI) container will automatically register your protections.
-- The BitMono Obfuscation Engine will invoke your protection based on its type and the order specified in the configuration file.
+- The ObscuraX Obfuscation Engine will invoke your protection based on its type and the order specified in the configuration file.
 - The order of execution is determined by the position of each protection in the ``protections.json`` file within the configuration file. For example, AntiILdasm is executed first (because this protection is first in configuration) and Packers always run last after all protections, even if you set this ``Packer`` protection as a first one in configuration it will anyway gonna be called last.
 
 

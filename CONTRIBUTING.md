@@ -1,21 +1,21 @@
 # Special Thanks
 For great [CONTIRUBITNG.md](https://github.com/Washi1337/AsmResolver/blob/master/CONTRIBUTING.md) file which was "pasted" from [AsmResolver](https://github.com/Washi1337/AsmResolver)
 
-BitMono Coding Style and Licensing
+ObscuraX Coding Style and Licensing
 ======================================
 
 ## Aims
 
-This guide is for developers who wish to contribute to the BitMono codebase. It will detail how to properly style and format code to fit this project.
+This guide is for developers who wish to contribute to the ObscuraX codebase. It will detail how to properly style and format code to fit this project.
 
 Following this guide and formatting your code as detailed will likely get your pull request merged much faster than if you don't (assuming the written code has no mistakes in itself).
 
-If you make any changes to BitMono, you are agreeing to the license conditions as specified in [LICENSE.md](LICENSE.md).
+If you make any changes to ObscuraX, you are agreeing to the license conditions as specified in [LICENSE.md](LICENSE.md).
 
 
 ## General Workflow
 
-The BitMono project generally follows the principles of [Git Flow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow), with a few variations. Below a summary:
+The ObscuraX project generally follows the principles of [Git Flow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow), with a few variations. Below a summary:
 
 - Prefer to create a branch based on `main`.
 - Prefix your branch accordingly, depending on what kind of change you are trying to make.
@@ -23,14 +23,14 @@ The BitMono project generally follows the principles of [Git Flow](https://www.a
   - For issues and/or bug fixes, use `issue/name-of-issue-or-bug`.
 - Push your changes on this branch.
   - Make sure you are following the coding style guidelines as described in this document below.
-- Open a [Pull Request](https://github.com/sunnamed434/BitMono/pulls), setting the `main` branch as a base branch to merge into.
+- Open a [Pull Request](https://github.com/sunnamed434/ObscuraX/pulls), setting the `main` branch as a base branch to merge into.
 - Wait for your pull request to be reviewed and accepted.
   - Pull requests into `main` will only be accepted if all unit tests succeed and follow the guidelines as described in this document.
 
 
 ## C# Coding Style
 
-The general idea behind the coding style that is adopted in the BitMono project follows a few key points:
+The general idea behind the coding style that is adopted in the ObscuraX project follows a few key points:
 
 - Do not to be afraid to be verbose.
 - Separate different parts of the code from each other wherever possible.

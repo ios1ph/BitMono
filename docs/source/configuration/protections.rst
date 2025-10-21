@@ -68,7 +68,7 @@ Default config (it can be different with new updates, but just let's see how it 
 	      "Enabled": true
 	    },
 	    {
-	      "Name": "BitMono", // This is going to be executed last because its a Packer, even if you put this before AntiILdasm it going to be called last anyway.
+	      "Name": "ObscuraX", // This is going to be executed last because its a Packer, even if you put this before AntiILdasm it going to be called last anyway.
 	      "Enabled": true
 	    }
 	  ]

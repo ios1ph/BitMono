@@ -3,8 +3,8 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
-# BitMono artifacts
-src/BitMono.CLI/BitMono-v*.zip
+# ObscuraX artifacts
+src/ObscuraX.CLI/ObscuraX-v*.zip
 
 # Ignore temporaries from GameCI
 /[Aa]rtifacts/

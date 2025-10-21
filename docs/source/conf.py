@@ -2,8 +2,8 @@
 
 # -- Project information
 
-project = 'BitMono'
-copyright = '2022-2025, BitMono'
+project = 'ObscuraX'
+copyright = '2022-2025, ObscuraX'
 author = 'sunnamed434'
 
 release = '0.1'

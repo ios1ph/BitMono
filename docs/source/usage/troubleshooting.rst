@@ -7,14 +7,14 @@ Common Issues and Solutions
 Access Denied
 ~~~~~~~~~~~~
 
-**Problem**: You get an "Access Denied" error when BitMono tries to open the output directory.
+**Problem**: You get an "Access Denied" error when ObscuraX tries to open the output directory.
 
 **Solution**: Set `OpenFileDestinationInFileExplorer` to `false` in `obfuscation.json`.
 
 Missing Dependencies
 ~~~~~~~~~~~~~~~~~~~
 
-**Problem**: BitMono can't find required dependencies.
+**Problem**: ObscuraX can't find required dependencies.
 
 **Solution**: 
 - Make sure all required .dll files are in the ``libs`` directory
@@ -26,16 +26,16 @@ Framework Mismatch
 
 **Problem**: You get compatibility warnings or errors.
 
-**Solution**: Use the BitMono version that matches your target framework:
+**Solution**: Use the ObscuraX version that matches your target framework:
 
-- .NET 8 applications → Use .NET 8 version of BitMono
-- .NET Framework applications → Use .NET Framework version of BitMono
-- Unity/Mono applications → Use .NET Framework version of BitMono
+- .NET 8 applications → Use .NET 8 version of ObscuraX
+- .NET Framework applications → Use .NET Framework version of ObscuraX
+- Unity/Mono applications → Use .NET Framework version of ObscuraX
 
 No Protections Enabled
 ~~~~~~~~~~~~~~~~~~~~~
 
-**Problem**: BitMono says no protections are enabled.
+**Problem**: ObscuraX says no protections are enabled.
 
 **Solution**: 
 - Enable at least one protection in `protections.json` by setting `Enabled` to `true`
@@ -44,10 +44,10 @@ No Protections Enabled
 Permission Errors
 ~~~~~~~~~~~~~~~~
 
-**Problem**: BitMono can't write to the output directory.
+**Problem**: ObscuraX can't write to the output directory.
 
 **Solution**: 
-- Make sure BitMono has write permissions to the output directory
+- Make sure ObscuraX has write permissions to the output directory
 - Try running as administrator if needed
 - Check that the output path is valid and accessible
 
@@ -58,5 +58,5 @@ If you're still having issues:
 
 - Check the `obfuscation.json` and `protections.json` configuration files
 - Look at the console output for specific error messages
-- Try running BitMono in interactive mode to see detailed prompts
-- Visit the `GitHub Issues <https://github.com/sunnamed434/BitMono/issues>`_ page 
+- Try running ObscuraX in interactive mode to see detailed prompts
+- Visit the `GitHub Issues <https://github.com/sunnamed434/ObscuraX/issues>`_ page 

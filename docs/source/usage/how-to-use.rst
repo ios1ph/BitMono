@@ -6,15 +6,15 @@ Choose your integration:
 CLI Tool
 --------
 
-Download and run BitMono from the command line.
+Download and run ObscuraX from the command line.
 
 Download
 ~~~~~~~~
 
-Get BitMono from `GitHub releases <https://github.com/sunnamed434/BitMono/releases/latest>`_:
+Get ObscuraX from `GitHub releases <https://github.com/sunnamed434/ObscuraX/releases/latest>`_:
 
-- .NET 8 apps: ``BitMono-v0.25.3-CLI-net8.0-win-x64.zip``
-- .NET Framework apps: ``BitMono-v0.25.3-CLI-net462-win-x64.zip``
+- .NET 8 apps: ``ObscuraX-v0.25.3-CLI-net8.0-win-x64.zip``
+- .NET Framework apps: ``ObscuraX-v0.25.3-CLI-net462-win-x64.zip``
 - Unity/Mono: Use the .NET Framework version
 
 Usage
@@ -22,13 +22,13 @@ Usage
 
 .. code-block:: console
 
-   BitMono.CLI -f MyApp.exe
+   ObscuraX.CLI -f MyApp.exe
 
 More options:
 
 .. code-block:: console
 
-   BitMono.CLI -f MyApp.exe -l Dependencies -o MyObfuscatedApp -p FullRenamer,StringEncryption
+   ObscuraX.CLI -f MyApp.exe -l Dependencies -o MyObfuscatedApp -p FullRenamer,StringEncryption
 
 Available options:
 
@@ -56,29 +56,29 @@ Put your files like this:
        ├── SomeLibrary.dll
        └── AnotherLibrary.dll
 
-The ``libs`` folder has your app's dependencies. BitMono needs these to understand your code.
+The ``libs`` folder has your app's dependencies. ObscuraX needs these to understand your code.
 
 .NET Global Tool
 ----------------
 
-Install and use BitMono as a global .NET tool.
+Install and use ObscuraX as a global .NET tool.
 
 Installation
 ~~~~~~~~~~~~
 
 .. code-block:: console
 
-   dotnet tool install --global BitMono.GlobalTool
+   dotnet tool install --global ObscuraX.GlobalTool
 
 Usage
 ~~~~~
 
-Same as CLI tool, just run ``BitMono`` instead of ``BitMono.CLI``.
+Same as CLI tool, just run ``ObscuraX`` instead of ``ObscuraX.CLI``.
 
 Configuration
 -------------
 
-BitMono uses these config files:
+ObscuraX uses these config files:
 
 ``protections.json`` - Which protections to use:
 
@@ -107,7 +107,7 @@ BitMono uses these config files:
          "Enabled": true
        },
        {
-         "Name": "BitMono",
+         "Name": "ObscuraX",
          "Enabled": true
        }
      ]
@@ -116,7 +116,7 @@ BitMono uses these config files:
 .. note::
 
    The order of protections in the configuration determines their execution order. 
-   Packers (like BitDotNet and BitMono) always run last, regardless of their position in the configuration.
+   Packers (like BitDotNet and ObscuraX) always run last, regardless of their position in the configuration.
 
 ``criticals.json`` - What NOT to obfuscate:
 
@@ -185,8 +185,8 @@ Most settings have sensible defaults. You only need to change them if you want s
 Unity Integration
 ----------------
 
-BitMono includes Unity integration that automatically obfuscates your assemblies during the Unity build process. 
-The integration hooks into Unity's build pipeline and runs BitMono CLI to protect your game code.
+ObscuraX includes Unity integration that automatically obfuscates your assemblies during the Unity build process. 
+The integration hooks into Unity's build pipeline and runs ObscuraX CLI to protect your game code.
 
 .. note::
 
@@ -198,16 +198,16 @@ Installation
 Download the Unity Integration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-1. Go to the latest BitMono release on `GitHub <https://github.com/sunnamed434/BitMono/releases/latest>`_
+1. Go to the latest ObscuraX release on `GitHub <https://github.com/sunnamed434/ObscuraX/releases/latest>`_
 2. For your Unity version, download the archive with both package formats:
 
-   - File name pattern: ``BitMono-Unity-v<version>-Unity<unityVersion>.zip``
-   - Example: ``BitMono-Unity-v1.2.3-Unity2021.3.45f1.zip``
+   - File name pattern: ``ObscuraX-Unity-v<version>-Unity<unityVersion>.zip``
+   - Example: ``ObscuraX-Unity-v1.2.3-Unity2021.3.45f1.zip``
 
    The archive contains:
 
-   - ``BitMono-Unity-v<version>-Unity<unityVersion>.unitypackage`` (classic package)
-   - ``BitMono-Unity-UPM-v<version>-Unity<unityVersion>.tgz`` (Unity Package Manager tarball)
+   - ``ObscuraX-Unity-v<version>-Unity<unityVersion>.unitypackage`` (classic package)
+   - ``ObscuraX-Unity-UPM-v<version>-Unity<unityVersion>.tgz`` (Unity Package Manager tarball)
 
 Install (choose one)
 ~~~~~~~~~~~~~~~~~~~~
@@ -216,7 +216,7 @@ Install (choose one)
 
 1. Extract the downloaded ``.zip``
 2. In Unity: **Assets → Import Package → Custom Package**
-3. Select ``BitMono-Unity-v<version>-Unity<unityVersion>.unitypackage``
+3. Select ``ObscuraX-Unity-v<version>-Unity<unityVersion>.unitypackage``
 4. Click **Import**
 
 .. rubric:: Option B — Install via Unity Package Manager (UPM)
@@ -224,7 +224,7 @@ Install (choose one)
 1. Extract the downloaded ``.zip``
 2. In Unity: **Window → Package Manager**
 3. Click the ``+`` dropdown → **Add package from tarball...**
-4. Select ``BitMono-Unity-UPM-v<version>-Unity<unityVersion>.tgz``
+4. Select ``ObscuraX-Unity-UPM-v<version>-Unity<unityVersion>.tgz``
 5. Confirm installation
 
 Project Structure
@@ -235,16 +235,16 @@ After importing, your project will contain:
 .. code-block:: text
 
    Assets/
-   ├── BitMono.Unity/
+   ├── ObscuraX.Unity/
    │   ├── Editor/
-   │   │   ├── BitMonoBuildProcessor.cs    # Build hook implementation
-   │   │   ├── BitMonoConfig.cs            # Configuration ScriptableObject
-   │   │   ├── BitMonoConfigInspector.cs   # Unity Inspector UI
-   │   │   └── BitMono.Unity.Editor.asmdef # Assembly definition
-   │   ├── BitMonoConfig.asset             # Your configuration file
+   │   │   ├── ObscuraXBuildProcessor.cs    # Build hook implementation
+   │   │   ├── ObscuraXConfig.cs            # Configuration ScriptableObject
+   │   │   ├── ObscuraXConfigInspector.cs   # Unity Inspector UI
+   │   │   └── ObscuraX.Unity.Editor.asmdef # Assembly definition
+   │   ├── ObscuraXConfig.asset             # Your configuration file
    │   └── package.json                    # Unity Package Manager metadata
-   └── BitMono.CLI/
-       ├── BitMono.CLI.exe                 # The actual obfuscation tool
+   └── ObscuraX.CLI/
+       ├── ObscuraX.CLI.exe                 # The actual obfuscation tool
        ├── protections.json                # Protection settings
        ├── obfuscation.json                # Obfuscation settings
        ├── criticals.json                  # What not to obfuscate
@@ -253,9 +253,9 @@ After importing, your project will contain:
 Configuration
 ~~~~~~~~~~~~~
 
-1. In Unity, go to **Window → BitMono → Configuration**
-2. Check **Enable Obfuscation** to turn on BitMono
-3. That's it! BitMono will automatically protect your code during builds
+1. In Unity, go to **Window → ObscuraX → Configuration**
+2. Check **Enable Obfuscation** to turn on ObscuraX
+3. That's it! ObscuraX will automatically protect your code during builds
 
 The integration comes with sensible defaults. You only need to change settings if you want something different.
 
@@ -265,7 +265,7 @@ Usage
 Just build your project normally:
 
 1. Go to **File → Build Settings → Build**
-2. BitMono automatically obfuscates your code during the build
+2. ObscuraX automatically obfuscates your code during the build
 3. Your final build contains protected code
 
 That's it! No extra steps needed.
@@ -280,36 +280,36 @@ NuGet Package Integration (For Developers)
 
 .. note::
 
-   This section is for developers who want to integrate BitMono into their own obfuscation tools or build custom solutions. For regular users, the CLI tool or Unity integration are recommended.
+   This section is for developers who want to integrate ObscuraX into their own obfuscation tools or build custom solutions. For regular users, the CLI tool or Unity integration are recommended.
 
-BitMono is also available as NuGet packages, allowing you to integrate obfuscation capabilities directly into your own applications or build custom obfuscation tools.
+ObscuraX is also available as NuGet packages, allowing you to integrate obfuscation capabilities directly into your own applications or build custom obfuscation tools.
 
 Available Packages
 ~~~~~~~~~~~~~~~~~~
 
 **Core Components:**
 
-- `BitMono.API <https://www.nuget.org/packages/BitMono.API/>`_ - Core interfaces and abstractions
-- `BitMono.Core <https://www.nuget.org/packages/BitMono.Core/>`_ - Main obfuscation engine
-- `BitMono.Protections <https://www.nuget.org/packages/BitMono.Protections/>`_ - Collection of protection implementations
-- `BitMono.Shared <https://www.nuget.org/packages/BitMono.Shared/>`_ - Shared utilities and models
+- `ObscuraX.API <https://www.nuget.org/packages/ObscuraX.API/>`_ - Core interfaces and abstractions
+- `ObscuraX.Core <https://www.nuget.org/packages/ObscuraX.Core/>`_ - Main obfuscation engine
+- `ObscuraX.Protections <https://www.nuget.org/packages/ObscuraX.Protections/>`_ - Collection of protection implementations
+- `ObscuraX.Shared <https://www.nuget.org/packages/ObscuraX.Shared/>`_ - Shared utilities and models
 
 **Host & Utilities:**
 
-- `BitMono.Host <https://www.nuget.org/packages/BitMono.Host/>`_ - Application host framework
-- `BitMono.Utilities <https://www.nuget.org/packages/BitMono.Utilities/>`_ - Helper functions and utilities
-- `BitMono.Obfuscation <https://www.nuget.org/packages/BitMono.Obfuscation/>`_ - High-level obfuscation orchestrator
-- `BitMono.Runtime <https://www.nuget.org/packages/BitMono.Runtime/>`_ - Runtime components for obfuscated assemblies
+- `ObscuraX.Host <https://www.nuget.org/packages/ObscuraX.Host/>`_ - Application host framework
+- `ObscuraX.Utilities <https://www.nuget.org/packages/ObscuraX.Utilities/>`_ - Helper functions and utilities
+- `ObscuraX.Obfuscation <https://www.nuget.org/packages/ObscuraX.Obfuscation/>`_ - High-level obfuscation orchestrator
+- `ObscuraX.Runtime <https://www.nuget.org/packages/ObscuraX.Runtime/>`_ - Runtime components for obfuscated assemblies
 
 Configuration
 ~~~~~~~~~~~~~
 
-When using NuGet packages, you'll need to configure BitMono programmatically or through configuration files. See the `developer documentation <../developers/configuration.html>`_ for detailed configuration options.
+When using NuGet packages, you'll need to configure ObscuraX programmatically or through configuration files. See the `developer documentation <../developers/configuration.html>`_ for detailed configuration options.
 
 Dependencies
 ~~~~~~~~~~~~
 
-BitMono NuGet packages may use nightly versions of AsmResolver. If you encounter dependency resolution issues, see the `NuGet configuration guide <nuget-configuration.html>`_ for setup instructions.
+ObscuraX NuGet packages may use nightly versions of AsmResolver. If you encounter dependency resolution issues, see the `NuGet configuration guide <nuget-configuration.html>`_ for setup instructions.
 
 Next Steps
 ----------

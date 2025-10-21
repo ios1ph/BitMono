@@ -2,7 +2,7 @@ Protection Runtime Moniker
 ==========================
 
 You have protection that works only with specific runtime and you want to let it know to the user.
-By default BitMono provides an opportunity to talk with the users, to warn them, like be careful, this protection working only with ``Mono``.
+By default ObscuraX provides an opportunity to talk with the users, to warn them, like be careful, this protection working only with ``Mono``.
 
 .. code-block:: csharp
 

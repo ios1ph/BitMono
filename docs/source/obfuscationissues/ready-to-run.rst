@@ -1,7 +1,7 @@
 ReadyToRun
 ==========
 
-If you're encountering an error from BitMono regarding ReadyToRun, or your application is built using ReadyToRun, it means that your application is "protected" by being compiled into native code. However, BitMono cannot obfuscate it because it requires "managed" code.
+If you're encountering an error from ObscuraX regarding ReadyToRun, or your application is built using ReadyToRun, it means that your application is "protected" by being compiled into native code. However, ObscuraX cannot obfuscate it because it requires "managed" code.
 
 To solve this issue, you can do the following:
 
@@ -35,4 +35,4 @@ Usually, in the output folder of your project (if it's a `.exe`), there should b
 Didn't Help?
 ------------
 
-If none of the solutions worked, it likely means your file is either protected or broken. If this isn't the case, please open an issue on the BitMono GitHub repository or reach out to us on Discord for further assistance.
+If none of the solutions worked, it likely means your file is either protected or broken. If this isn't the case, please open an issue on the ObscuraX GitHub repository or reach out to us on Discord for further assistance.

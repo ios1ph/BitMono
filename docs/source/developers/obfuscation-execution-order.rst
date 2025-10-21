@@ -1,11 +1,11 @@
 Obfuscation Engine Execution Order
 ==================================
 
-BitMono uses its own obfuscation execution order which is good to be known, and it reminds ConfuserEx a lot, if you're familiar with it you can be easier with it.
+ObscuraX uses its own obfuscation execution order which is good to be known, and it reminds ConfuserEx a lot, if you're familiar with it you can be easier with it.
 
 1. Output Loaded Module Info
-2. Output Information about BitMono (example, is it intended for .NET Core or Mono or .NET Framework, etc.) and running OS, etc.
-3. Output Compatibility Issues in case of module is built for .NET Framework, but BitMono is running on .NET Core, or vice versa.
+2. Output Information about ObscuraX (example, is it intended for .NET Core or Mono or .NET Framework, etc.) and running OS, etc.
+3. Output Compatibility Issues in case of module is built for .NET Framework, but ObscuraX is running on .NET Core, or vice versa.
 4. Sort Protections
 5. Information about Protections
 6. Configuration for Native Code

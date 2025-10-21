@@ -1,12 +1,12 @@
 NuGet Configuration
 ==================
 
-This guide explains how to configure NuGet when using BitMono as a NuGet package dependency.
+This guide explains how to configure NuGet when using ObscuraX as a NuGet package dependency.
 
 When Configuration is Needed
 ----------------------------
 
-You need to configure NuGet if you encounter dependency resolution errors when trying to use BitMono packages. This happens when BitMono may use nightly versions of AsmResolver (which we may use when needed for critical fixes) that are only available in a custom feed, not on the default nuget.org.
+You need to configure NuGet if you encounter dependency resolution errors when trying to use ObscuraX packages. This happens when ObscuraX may use nightly versions of AsmResolver (which we may use when needed for critical fixes) that are only available in a custom feed, not on the default nuget.org.
 
 Configuration Steps
 -------------------
@@ -31,23 +31,23 @@ Configuration Steps
 
 That's it! Your project should now be able to resolve AsmResolver dependencies.
 
-Available BitMono Packages
+Available ObscuraX Packages
 --------------------------
 
 **Core Packages:**
 
-- `BitMono.API <https://www.nuget.org/packages/BitMono.API/>`_ - Core interfaces and abstractions
-- `BitMono.Core <https://www.nuget.org/packages/BitMono.Core/>`_ - Main obfuscation engine
-- `BitMono.Protections <https://www.nuget.org/packages/BitMono.Protections/>`_ - Protection implementations
-- `BitMono.Shared <https://www.nuget.org/packages/BitMono.Shared/>`_ - Shared utilities and models
+- `ObscuraX.API <https://www.nuget.org/packages/ObscuraX.API/>`_ - Core interfaces and abstractions
+- `ObscuraX.Core <https://www.nuget.org/packages/ObscuraX.Core/>`_ - Main obfuscation engine
+- `ObscuraX.Protections <https://www.nuget.org/packages/ObscuraX.Protections/>`_ - Protection implementations
+- `ObscuraX.Shared <https://www.nuget.org/packages/ObscuraX.Shared/>`_ - Shared utilities and models
 
 **Host & Utilities:**
 
-- `BitMono.Host <https://www.nuget.org/packages/BitMono.Host/>`_ - Application host framework
-- `BitMono.Utilities <https://www.nuget.org/packages/BitMono.Utilities/>`_ - Helper functions
-- `BitMono.Obfuscation <https://www.nuget.org/packages/BitMono.Obfuscation/>`_ - High-level obfuscation orchestrator
-- `BitMono.Runtime <https://www.nuget.org/packages/BitMono.Runtime/>`_ - Runtime components
+- `ObscuraX.Host <https://www.nuget.org/packages/ObscuraX.Host/>`_ - Application host framework
+- `ObscuraX.Utilities <https://www.nuget.org/packages/ObscuraX.Utilities/>`_ - Helper functions
+- `ObscuraX.Obfuscation <https://www.nuget.org/packages/ObscuraX.Obfuscation/>`_ - High-level obfuscation orchestrator
+- `ObscuraX.Runtime <https://www.nuget.org/packages/ObscuraX.Runtime/>`_ - Runtime components
 
 **Tools:**
 
-- `BitMono.GlobalTool <https://www.nuget.org/packages/BitMono.GlobalTool/>`_ - .NET Global Tool
+- `ObscuraX.GlobalTool <https://www.nuget.org/packages/ObscuraX.GlobalTool/>`_ - .NET Global Tool

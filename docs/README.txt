@@ -1,4 +1,4 @@
-How to Run BitMono Docs Locally
+How to Run ObscuraX Docs Locally
 
 Prerequisites:
 - Ensure Docker is installed on your machine. If not, install Docker from https://docs.docker.com/get-docker/.

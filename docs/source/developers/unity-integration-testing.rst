@@ -10,14 +10,14 @@ This testing setup lets you verify that changes work correctly without creating 
 Scripts
 -------
 
-Located in ``src/BitMono.Unity/scripts/``:
+Located in ``src/ObscuraX.Unity/scripts/``:
 
 - ``copy-to-test-project.bat/ps1`` - Copies files to test project & Generates .meta to disable CLI plugin import under Assets
 
 Testing
 -------
 
-1. Build CLI: ``dotnet build src/BitMono.CLI/BitMono.CLI.csproj -c Release -f net462``
+1. Build CLI: ``dotnet build src/ObscuraX.CLI/ObscuraX.CLI.csproj -c Release -f net462``
 2. Run: ``copy-to-test-project.bat``
-3. Open Unity: ``test/BitMono.Unity.TestProject/``
+3. Open Unity: ``test/ObscuraX.Unity.TestProject/``
 4. Build to test

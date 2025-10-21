@@ -40,7 +40,7 @@ Protection List
 
 - **BitDateTimeStamp**
 
-- **BitMono**
+- **ObscuraX**
 
 - **BillionNops**
 

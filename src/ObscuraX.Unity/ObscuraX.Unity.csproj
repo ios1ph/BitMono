@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net462</TargetFramework>
+  </PropertyGroup>
+
+  <Import Project="$(MSBuildThisFileDirectory)..\..\props\SharedProjectProps.props" />
+
+  <ItemGroup>
+    <ProjectReference Include="..\ObscuraX.API\ObscuraX.API.csproj" />
+    <ProjectReference Include="..\ObscuraX.Core\ObscuraX.Core.csproj" />
+    <ProjectReference Include="..\ObscuraX.Host\ObscuraX.Host.csproj" />
+    <ProjectReference Include="..\ObscuraX.Protections\ObscuraX.Protections.csproj" />
+    <ProjectReference Include="..\ObscuraX.Runtime\ObscuraX.Runtime.csproj" />
+    <ProjectReference Include="..\ObscuraX.Utilities\ObscuraX.Utilities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NullGuard.Fody" Version="3.1.1" PrivateAssets="All" />
+  </ItemGroup>
+
+</Project>

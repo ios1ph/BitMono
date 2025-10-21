@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFrameworks>net9.0;net8.0;net7.0;net6.0;net462;netstandard2.1;netstandard2.0;</TargetFrameworks>
+    <ApplicationIcon>ObscuraXLogo.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <Import Project="$(MSBuildThisFileDirectory)..\..\props\SharedProjectProps.props"/>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ObscuraX.API\ObscuraX.API.csproj"/>
+    <ProjectReference Include="..\ObscuraX.Host\ObscuraX.Host.csproj"/>
+    <ProjectReference Include="..\ObscuraX.Obfuscation\ObscuraX.Obfuscation.csproj"/>
+    <ProjectReference Include="..\ObscuraX.Protections\ObscuraX.Protections.csproj"/>
+    <ProjectReference Include="..\ObscuraX.Runtime\ObscuraX.Runtime.csproj"/>
+    <ProjectReference Include="..\ObscuraX.Shared\ObscuraX.Shared.csproj"/>
+    <ProjectReference Include="..\ObscuraX.Utilities\ObscuraX.Utilities.csproj"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommandLineParser" Version="2.9.1"/>
+    <PackageReference Include="Costura.Fody" Version="6.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="NullGuard.Fody" Version="3.1.1"/>
+  </ItemGroup>
+
+</Project>

@@ -3,7 +3,7 @@ How to disable path masking?
 
 You're probably getting a message with the file/directory or just a path ``(***\things)``, and you might have the same folder twice somewhere, and you need to see the full path without masking if this is what you're looking for, all instructions how to do that are provided here.
 
-Open-up ``logging.json`` in the root of the downloaded BitMono, edit this file, and remove this:
+Open-up ``logging.json`` in the root of the downloaded ObscuraX, edit this file, and remove this:
 
 .. code-block:: json
 
@@ -14,7 +14,7 @@ Open-up ``logging.json`` in the root of the downloaded BitMono, edit this file, 
                     "options": {
                         "MaskValue": "***\\",
                         "MaskProperties": [ "path", "directory", "file" ],
-                        "MaskingOperators": [ "BitMono.Host.Extensions.PathMaskingOperator, BitMono.Host" ]
+                        "MaskingOperators": [ "ObscuraX.Host.Extensions.PathMaskingOperator, ObscuraX.Host" ]
                     }
                 }
             },
@@ -42,7 +42,7 @@ So, after edit ``logging.json`` looks like this:
 	                        {
 	                            "Name": "File",
 	                            "Args": {
-	                                "path": "logs/bitmono-{{date}}.log",
+	                                "path": "logs/obscurax-{{date}}.log",
 	                                "outputTemplate": "[{Timestamp:yyyy-MM-dd HH:mm:ss} {Level:u3}][{SourceContext}] {Message:lj}{NewLine}{Exception}"
 	                            }
 	                        }

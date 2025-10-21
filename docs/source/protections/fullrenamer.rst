@@ -8,7 +8,7 @@ Protection renames types/methods/fields, however, ignores things such as reflect
 
 If you want you can easily configure `criticals.json` to ignore strings and lot of stuff. 
 
-Be careful, because renamer is tricky protection, not always useful, and does not always work properly. But, if you configure BitMono correctly Renamer can be a great protection (I'm about big projects, not crackmes).
+Be careful, because renamer is tricky protection, not always useful, and does not always work properly. But, if you configure ObscuraX correctly Renamer can be a great protection (I'm about big projects, not crackmes).
 
 Protection Type
 ---------------

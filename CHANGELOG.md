@@ -45,7 +45,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 - Annoying EndOfStreamException being thrown in AssemblyResolver when file doesn't exists or this is lib/file that at the end of the stream.
 - Not being properly compiled docs.
-- DotNetHook VirtualProtect will not work on linux [#37](https://github.com/sunnamed434/BitMono/issues/37)
+- DotNetHook VirtualProtect will not work on linux [#37](https://github.com/sunnamed434/ObscuraX/issues/37)
 
 ## 0.19.0-alpha.34
 2023-10-12
@@ -54,10 +54,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Artifacts creation.
 - Automatic release (CI).
 - .netstandard2.1 Support.
-- More information in `build.md` how to build BitMono.
+- More information in `build.md` how to build ObscuraX.
 
 ### Changed
-- Removed unused and broken GUI version of BitMono from solution.
+- Removed unused and broken GUI version of ObscuraX from solution.
 - Bumped to the stablest versions of NuGet Packages to don't break the compability with the target framework.
 - .csproj style.
 
@@ -73,16 +73,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - .NET 6.0 Support.
 
 ### Fixed
-- BitMono drag and drop exception [#135](https://github.com/sunnamed434/BitMono/issues/135).
-- First line of the CLI shows working directory [#137](https://github.com/sunnamed434/BitMono/issues/137).
-- .NET 5 exceptions [#138](https://github.com/sunnamed434/BitMono/issues/138).
+- ObscuraX drag and drop exception [#135](https://github.com/sunnamed434/ObscuraX/issues/135).
+- First line of the CLI shows working directory [#137](https://github.com/sunnamed434/ObscuraX/issues/137).
+- .NET 5 exceptions [#138](https://github.com/sunnamed434/ObscuraX/issues/138).
 
 ## 0.16.2-alpha.31
 2023-07-19
 
 ### Fixed
 
-- Exception on the BitMono run [#132](https://github.com/sunnamed434/BitMono/issues/132).
+- Exception on the ObscuraX run [#132](https://github.com/sunnamed434/ObscuraX/issues/132).
 
 ### Changed
 
@@ -97,7 +97,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-- (UnmanagedString) Add unicode support, fix strings with null characters [#130](https://github.com/sunnamed434/BitMono/pull/130), by [GazziFX](https://github.com/GazziFX)
+- (UnmanagedString) Add unicode support, fix strings with null characters [#130](https://github.com/sunnamed434/ObscuraX/pull/130), by [GazziFX](https://github.com/GazziFX)
 - Other minor bug fixes.
 
 ### Changed
@@ -130,7 +130,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-- Bug that caused BitMono.CLI to be crashed.
+- Bug that caused ObscuraX.CLI to be crashed.
 - UnmanagedString Protection.
 - CallToCalli Protection.
 
@@ -179,12 +179,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Return obfuscation success & failure status from BitMono.CLI (0 - Success, 1 - Failure), by [techei](https://github.com/techei)
+- Return obfuscation success & failure status from ObscuraX.CLI (0 - Success, 1 - Failure), by [techei](https://github.com/techei)
 - More docs and answers to the questions.
 
 #### Fixed
 
-- Assembly resolve [#113](https://github.com/sunnamed434/BitMono/issues/113), by [techei](https://github.com/techei)
+- Assembly resolve [#113](https://github.com/sunnamed434/ObscuraX/issues/113), by [techei](https://github.com/techei)
 
 ### Changed
 
@@ -213,8 +213,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- [Costura-Fody](https://github.com/Fody/Costura) support, now references are resolved automatically, [#102](https://github.com/sunnamed434/BitMono/issues/102).
-- Support when path contains quotes (for example: "path..."), [#104](https://github.com/sunnamed434/BitMono/issues/104).
+- [Costura-Fody](https://github.com/Fody/Costura) support, now references are resolved automatically, [#102](https://github.com/sunnamed434/ObscuraX/issues/102).
+- Support when path contains quotes (for example: "path..."), [#104](https://github.com/sunnamed434/ObscuraX/issues/104).
 
 ### Fixed
 
@@ -226,24 +226,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- BitMono ASCII Art in CLI.
+- ObscuraX ASCII Art in CLI.
 - Hiding of the path (file path, directory path, etc).
 - Documentation.
 
 ### Fixed
 
-- Error when use mono BitMono.CLI.exe [#93](https://github.com/sunnamed434/BitMono/issues/93)
+- Error when use mono ObscuraX.CLI.exe [#93](https://github.com/sunnamed434/ObscuraX/issues/93)
 
 ### Changed
 
-- Major changes in whole API of BitMono.
+- Major changes in whole API of ObscuraX.
 
 ## 0.10.0-alpha.19
 2023-02-013
 
 ### Added
 
-- Command line arguments [#82](https://github.com/sunnamed434/BitMono/issues/82).
+- Command line arguments [#82](https://github.com/sunnamed434/ObscuraX/issues/82).
 
 ### Fixed
 
@@ -258,7 +258,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-- Errors when launching the BitMono.CLI.
+- Errors when launching the ObscuraX.CLI.
 - Bug fixes and other minor improvements.
 
 ## 0.8.0-alpha.17
@@ -266,17 +266,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Reflection analysis such as in ConfuserEx [#41](https://github.com/sunnamed434/BitMono/issues/41).
-- BitMono protection.
+- Reflection analysis such as in ConfuserEx [#41](https://github.com/sunnamed434/ObscuraX/issues/41).
+- ObscuraX protection.
 
 ### Changed
 
-- Moved new protections from BitDotNet to BitMono protection and added support for PE32 and PE32+.
+- Moved new protections from BitDotNet to ObscuraX protection and added support for PE32 and PE32+.
 
 ### Fixed
 
-- README text spelling [#54](https://github.com/sunnamed434/BitMono/pull/54), by [Gibsol](https://github.com/Gibsol).
-- .gitignore [#81](https://github.com/sunnamed434/BitMono/pull/81), by [0x59R11](https://github.com/0x59R11).
+- README text spelling [#54](https://github.com/sunnamed434/ObscuraX/pull/54), by [Gibsol](https://github.com/Gibsol).
+- .gitignore [#81](https://github.com/sunnamed434/ObscuraX/pull/81), by [0x59R11](https://github.com/0x59R11).
 
 ### 0.7.0-alpha.16
 
@@ -308,7 +308,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 #### Changed
 
-- Migrate dnlib to AsmResolver or Mono.Cecil [#50](https://github.com/sunnamed434/BitMono/issues/50).
+- Migrate dnlib to AsmResolver or Mono.Cecil [#50](https://github.com/sunnamed434/ObscuraX/issues/50).
 
 #### Fixed
 
@@ -316,9 +316,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - StringsEncryption Protection.
 - CallToCalli Protection.
 - DotNetHook Protection.
-- Load Runtime Module via file instead of typeof(SomeRuntime).Module [#55](https://github.com/sunnamed434/BitMono/issues/55).
-- Rewrite Custom Attributes Resolve as less as a possible reflection [#57](https://github.com/sunnamed434/BitMono/issues/57).
-- System.BadImageFormatException: Invalid DOS signature [#45](https://github.com/sunnamed434/BitMono/issues/45).
+- Load Runtime Module via file instead of typeof(SomeRuntime).Module [#55](https://github.com/sunnamed434/ObscuraX/issues/55).
+- Rewrite Custom Attributes Resolve as less as a possible reflection [#57](https://github.com/sunnamed434/ObscuraX/issues/57).
+- System.BadImageFormatException: Invalid DOS signature [#45](https://github.com/sunnamed434/ObscuraX/issues/45).
 - Whole Protections execution process.
 - Protections execution information.
 - Obfuscation.
@@ -344,7 +344,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - DotNetHook Protection.
 - StringsEncryption Protection.
 - CallToCalli Protection.
-- Obfuscation doesn't saves assembly information such as assembly attributes [#36](https://github.com/sunnamed434/BitMono/issues/36).
+- Obfuscation doesn't saves assembly information such as assembly attributes [#36](https://github.com/sunnamed434/ObscuraX/issues/36).
 - No more module reloading (Module now loads once and writes once).
 
 ### 0.4.3-alpha.12

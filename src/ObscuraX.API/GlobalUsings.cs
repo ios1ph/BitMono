@@ -1,0 +1,11 @@
+﻿global using AsmResolver.DotNet;
+global using Microsoft.Extensions.Configuration;
+global using Microsoft.Extensions.DependencyInjection;
+global using NullGuard;
+global using System;
+global using System.Collections.Generic;
+global using System.Diagnostics.CodeAnalysis;
+global using System.Threading.Tasks;
+global using ObscuraX.API.Protections;
+global using JetBrains.Annotations;
+global using IModule = Autofac.Core.IModule;

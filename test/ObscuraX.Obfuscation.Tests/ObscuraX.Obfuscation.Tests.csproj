@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="$(MSBuildThisFileDirectory)..\..\props\SharedTestProps.props"/>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\ObscuraX.Obfuscation\ObscuraX.Obfuscation.csproj" />
+    <ProjectReference Include="..\TestBinaries\DotNet\ObscuraX.Obfuscation.TestCases.CosturaDecompressor\ObscuraX.Obfuscation.TestCases.CosturaDecompressor.csproj" />
+  </ItemGroup>
+
+</Project>

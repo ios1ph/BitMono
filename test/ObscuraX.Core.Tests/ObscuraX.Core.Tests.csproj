@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="$(MSBuildThisFileDirectory)..\..\props\SharedTestProps.props"/>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\ObscuraX.API\ObscuraX.API.csproj" />
+    <ProjectReference Include="..\..\src\ObscuraX.Core\ObscuraX.Core.csproj" />
+    <ProjectReference Include="..\..\src\ObscuraX.Protections\ObscuraX.Protections.csproj" />
+    <ProjectReference Include="..\TestBinaries\DotNet\ObscuraX.Core.TestCases.CustomAttributes\ObscuraX.Core.TestCases.CustomAttributes.csproj" />
+    <ProjectReference Include="..\TestBinaries\DotNet\ObscuraX.Core.TestCases.Methods\ObscuraX.Core.TestCases.Methods.csproj" />
+    <ProjectReference Include="..\TestBinaries\DotNet\ObscuraX.Core.TestCases.Reflection\ObscuraX.Core.TestCases.Reflection.csproj" />
+    <ProjectReference Include="..\TestBinaries\DotNet\ObscuraX.Core.TestCases.Types\ObscuraX.Core.TestCases.Types.csproj" />
+  </ItemGroup>
+
+</Project>

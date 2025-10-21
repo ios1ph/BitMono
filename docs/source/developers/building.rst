@@ -1,10 +1,10 @@
-Building BitMono
+Building ObscuraX
 ===============
 
 Getting Binaries
 ---------------
 
-If you just need the compiled binaries, grab them `from releases <https://github.com/sunnamed434/BitMono/releases>`_. Open the dropdown button `Assets` and pick the archive you want. These binaries are built automatically via CI/CD pipeline.
+If you just need the compiled binaries, grab them `from releases <https://github.com/sunnamed434/ObscuraX/releases>`_. Open the dropdown button `Assets` and pick the archive you want. These binaries are built automatically via CI/CD pipeline.
 
 Building from Source
 -------------------
@@ -46,25 +46,25 @@ Release Archives
 
 Archive examples (versions and naming might be different):
 
-- .NET 9.0: ``BitMono-v0.24.2+7aaeceac-CLI-net9.0-linux-x64.zip``
-- .NET 8.0: ``BitMono-v0.24.2+7aaeceac-CLI-net8.0-linux-x64.zip``
-- .NET 7.0: ``BitMono-v0.24.2+7aaeceac-CLI-net7.0-win-x64.zip``
-- .NET 6.0: ``BitMono-v0.24.2+7aaeceac-CLI-net6.0-linux-x64.zip``
-- .NET 462: ``BitMono-v0.24.2+7aaeceac-CLI-net462-win-x64.zip``
-- netstandard 2.1: ``BitMono-v0.24.2+7aaeceac-CLI-netstandard2.1-linux-x64.zip``
-- netstandard 2.0: ``BitMono-v0.24.2+7aaeceac-CLI-netstandard2.0-win-x64.zip``
+- .NET 9.0: ``ObscuraX-v0.24.2+7aaeceac-CLI-net9.0-linux-x64.zip``
+- .NET 8.0: ``ObscuraX-v0.24.2+7aaeceac-CLI-net8.0-linux-x64.zip``
+- .NET 7.0: ``ObscuraX-v0.24.2+7aaeceac-CLI-net7.0-win-x64.zip``
+- .NET 6.0: ``ObscuraX-v0.24.2+7aaeceac-CLI-net6.0-linux-x64.zip``
+- .NET 462: ``ObscuraX-v0.24.2+7aaeceac-CLI-net462-win-x64.zip``
+- netstandard 2.1: ``ObscuraX-v0.24.2+7aaeceac-CLI-netstandard2.1-linux-x64.zip``
+- netstandard 2.0: ``ObscuraX-v0.24.2+7aaeceac-CLI-netstandard2.0-win-x64.zip``
 
 Archive naming explained:
 
 - ``v0.24.2`` is the version
 - ``+7aaeceac`` after the version is the commit hash
-- ``CLI`` means command line interface (currently BitMono only has CLI)
-- ``net9.0``, ``net8.0``, etc. is the target framework BitMono was built on
+- ``CLI`` means command line interface (currently ObscuraX only has CLI)
+- ``net9.0``, ``net8.0``, etc. is the target framework ObscuraX was built on
 
 Getting Help
 -----------
 
 If you run into issues or have questions:
 
-- Ask them `here <https://github.com/sunnamed434/BitMono/issues>`_
+- Ask them `here <https://github.com/sunnamed434/ObscuraX/issues>`_
 - Email: sunnamed434 (at) proton.me 

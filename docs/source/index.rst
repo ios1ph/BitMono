@@ -1,9 +1,9 @@
-BitMono
+ObscuraX
 =======
 
-This is the documentation of the BitMono project. BitMono is not only a tool that can be used for a two clicks to obfuscate your file, even for your own plugins and purposes - for example BitMono can be used as an Engine for your own obfuscation.
+This is the documentation of the ObscuraX project. ObscuraX is not only a tool that can be used for a two clicks to obfuscate your file, even for your own plugins and purposes - for example ObscuraX can be used as an Engine for your own obfuscation.
 
-Most of the questions/problems in BitMono will be solved by just learning `AsmResolver docs <https://docs.washi.dev/asmresolver/index.html>`_
+Most of the questions/problems in ObscuraX will be solved by just learning `AsmResolver docs <https://docs.washi.dev/asmresolver/index.html>`_
 
 Join our `Discord Server <https://discord.gg/sFDHd47St4>`_ you will find there help to your question(s) or just a nice talk!
 
@@ -29,7 +29,7 @@ Table of Contents:
    protections/antide4dot
    protections/bitdotnet
    protections/bitdecompiler
-   protections/bitmono
+   protections/obscurax
    protections/bittimedatestamp
    protections/bitmethoddotnet
    protections/antidecompiler
@@ -85,7 +85,7 @@ Table of Contents:
    :caption: Best Practices
    :name: sec-bestpractices
 
-   bestpractices/bitmono-combo
+   bestpractices/obscurax-combo
    bestpractices/zero-risk-obfuscation
 
 
@@ -107,4 +107,4 @@ Table of Contents:
    faq/costura-support
    faq/disable-path-masking
    faq/unable-to-reference-after-protect
-   faq/when-and-why-use-bitmono
+   faq/when-and-why-use-obscurax

@@ -1,5 +1,5 @@
 name: 'Project Build'
-description: 'Builds BitMono projects'
+description: 'Builds ObscuraX projects'
 inputs:
   project_path:
     description: 'Path to project folder'
@@ -66,7 +66,7 @@ runs:
       id: common-commands
       run: |
         echo "dotnet-restore=dotnet restore \$PROJECT_PATH ${{ steps.set-runtime-flag.outputs.runtime }} -p:Configuration=Release -p:TargetFramework=${{ inputs.target_framework }}" >> $GITHUB_OUTPUT
-        echo "dotnet-build=dotnet build \$PROJECT_PATH --configuration Release --no-restore ${{ steps.set-runtime-flag.outputs.runtime }} -p:TargetFramework=${{ inputs.target_framework }} -p:BitMonoVersion=${{ steps.get-version.outputs.version }}" >> $GITHUB_OUTPUT
+        echo "dotnet-build=dotnet build \$PROJECT_PATH --configuration Release --no-restore ${{ steps.set-runtime-flag.outputs.runtime }} -p:TargetFramework=${{ inputs.target_framework }} -p:ObscuraXVersion=${{ steps.get-version.outputs.version }}" >> $GITHUB_OUTPUT
         echo "dotnet-test=dotnet test \$PROJECT_PATH --configuration Release --no-restore --no-build ${{ steps.set-runtime-flag.outputs.runtime }} -p:TargetFramework=${{ inputs.target_framework }}" >> $GITHUB_OUTPUT
       shell: bash
 

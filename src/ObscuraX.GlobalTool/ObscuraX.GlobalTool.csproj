@@ -1,0 +1,55 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFrameworks>net9.0;net8.0;net7.0;net6.0</TargetFrameworks>
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>obscurax.console</ToolCommandName>
+  </PropertyGroup>
+
+  <Import Project="$(MSBuildThisFileDirectory)..\..\props\SharedProjectProps.props"/>
+
+  <ItemGroup>
+    <Compile Include="..\ObscuraX.CLI\Modules\Options.cs">
+      <Link>Modules/Options.cs</Link>
+    </Compile>
+    <Compile Include="..\ObscuraX.CLI\Modules\ObfuscationNeeds.cs">
+      <Link>Modules/ObfuscationNeeds.cs</Link>
+    </Compile>
+    <Compile Include="..\ObscuraX.CLI\Modules\LoggerConfiguratorExtensions.cs">
+      <Link>Modules\LoggerConfiguratorExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\ObscuraX.CLI\Modules\ObfuscationNeedsFactory.cs">
+      <Link>Modules\ObfuscationNeedsFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\ObscuraX.CLI\Modules\OptionsObfuscationNeedsFactory.cs">
+      <Link>Modules\OptionsObfuscationNeedsFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\ObscuraX.CLI\Modules\ReadlineObfuscationNeedsFactory.cs">
+      <Link>Modules\ReadlineObfuscationNeedsFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\ObscuraX.CLI\KnownReturnStatuses.cs">
+      <Link>KnownReturnStatuses.cs</Link>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ObscuraX.API\ObscuraX.API.csproj"/>
+    <ProjectReference Include="..\ObscuraX.Host\ObscuraX.Host.csproj"/>
+    <ProjectReference Include="..\ObscuraX.Obfuscation\ObscuraX.Obfuscation.csproj"/>
+    <ProjectReference Include="..\ObscuraX.Protections\ObscuraX.Protections.csproj"/>
+    <ProjectReference Include="..\ObscuraX.Runtime\ObscuraX.Runtime.csproj"/>
+    <ProjectReference Include="..\ObscuraX.Shared\ObscuraX.Shared.csproj"/>
+    <ProjectReference Include="..\ObscuraX.Utilities\ObscuraX.Utilities.csproj"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommandLineParser" Version="2.9.1"/>
+    <PackageReference Include="Costura.Fody" Version="6.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="NullGuard.Fody" Version="3.1.1"/>
+  </ItemGroup>
+
+</Project>

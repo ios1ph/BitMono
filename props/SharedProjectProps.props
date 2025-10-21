@@ -3,19 +3,19 @@
   <PropertyGroup>
     <PackageId>$(AssemblyName)</PackageId>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <PackageTags>BitMono Obfuscator Dotnet Unity Mono Bit AsmResolver dnlib Protector Mono-Obfuscator Dotnet-Protector</PackageTags>
+    <PackageTags>ObscuraX Obfuscator Dotnet Unity Mono Bit AsmResolver dnlib Protector Mono-Obfuscator Dotnet-Protector</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/sunnamed434/BitMono</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/sunnamed434/ObscuraX</PackageProjectUrl>
     <PackageOwners>sunnamed434</PackageOwners>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <BitMonoVersion>0.0.0</BitMonoVersion>
-    <PackageVersion>$(BitMonoVersion)</PackageVersion>
-    <Version>$(BitMonoVersion)</Version>
-    <InformationalVersion>$(BitMonoVersion)</InformationalVersion>
-    <RepositoryUrl>https://github.com/sunnamed434/BitMono</RepositoryUrl>
+    <ObscuraXVersion>0.0.0</ObscuraXVersion>
+    <PackageVersion>$(ObscuraXVersion)</PackageVersion>
+    <Version>$(ObscuraXVersion)</Version>
+    <InformationalVersion>$(ObscuraXVersion)</InformationalVersion>
+    <RepositoryUrl>https://github.com/sunnamed434/ObscuraX</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <Authors>sunnamed434</Authors>
-    <Company>BitMono</Company>
+    <Company>ObscuraX</Company>
     <Copyright>sunnamed434</Copyright>
     <LangVersion>preview</LangVersion>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>

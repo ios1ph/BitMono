@@ -1,8 +1,8 @@
-# Building BitMono
+# Building ObscuraX
 
 **This content has been moved to the documentation.**
 
-For comprehensive building instructions, please see the [Building Guide](https://bitmono.readthedocs.io/en/latest/developers/building.html) in the documentation.
+For comprehensive building instructions, please see the [Building Guide](https://obscurax.readthedocs.io/en/latest/developers/building.html) in the documentation.
 
 The documentation includes:
 - Prerequisites and tools needed
